@@ -34,7 +34,7 @@
         android:disableDependentsState="true"
         android:title="@string/ambient_display_always_on_title"
         android:summary="@string/ambient_display_always_on_summary"
-        android:persistent="false" />
+        android:persistent="true" />
 
     <PreferenceCategory
         android:key="pickup_sensor"
@@ -43,7 +43,6 @@
         <ListPreference
             android:key="gesture_pick_up_type"
             android:defaultValue="0"
-            android:icon="@drawable/ic_pickup"
             android:title="@string/pick_up_gesture_title"
             android:summary="%s"
             android:entries="@array/pick_up_gesture_entries"
@@ -58,7 +57,6 @@
         <SwitchPreference
             android:key="gesture_pocket"
             android:defaultValue="false"
-            android:icon="@drawable/ic_pocket"
             android:title="@string/pocket_gesture_title"
             android:summary="@string/pocket_gesture_summary" />
 
