@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022-2023 Project Xtended
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:settings="http://schemas.android.com/apk/res/com.xtended.oplus.OPlusExtras"
+ 	android.title="@string/kcal_settings_title">
+
+    <PreferenceCategory
+        android:key="kcal_values"
+        android:title="@string/kcal_settings">
+
+        <com.xtended.oplus.OPlusExtras.preferences.RedPreference
+            android:key="red"
+            android:title="@string/red_title" />
+
+        <com.xtended.oplus.OPlusExtras.preferences.GreenPreference
+            android:key="green"
+            android:title="@string/green_title" />
+
+        <com.xtended.oplus.OPlusExtras.preferences.BluePreference
+            android:key="blue"
+            android:title="@string/blue_title" />
+
+        <com.xtended.oplus.OPlusExtras.preferences.SaturationPreference
+            android:key="saturation"
+            android:title="@string/saturation_title" />
+
+        <com.xtended.oplus.OPlusExtras.preferences.HuePreference
+            android:key="hue"
+            android:title="@string/hue_title" />
+
+        <com.xtended.oplus.OPlusExtras.preferences.ValuePreference
+            android:key="value"
+            android:title="@string/value_title" />
+
+        <com.xtended.oplus.OPlusExtras.preferences.ContrastPreference
+            android:key="contrast"
+            android:title="@string/contrast_title" />
+    </PreferenceCategory>
+</PreferenceScreen>
