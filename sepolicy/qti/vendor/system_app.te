@@ -9,3 +9,5 @@ rw_dir_file(system_app, vendor_sysfs_graphics)
 rw_dir_file(system_app, vendor_sysfs_kgsl)
 rw_dir_file(system_app, vendor_sysfs_msm_perf)
 rw_dir_file(system_app, vendor_sysfs_usb_supply)
+
+allow system_app sysfs_leds:dir search;
