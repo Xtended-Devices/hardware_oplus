@@ -10,3 +10,6 @@ type hal_performance_hwservice, hwservice_manager_type;
 
 # Sensors
 type vendor_hal_oplusSensor_hwservice, hwservice_manager_type, protected_hwservice;
+
+# Dolby
+type hal_dms_hwservice, hwservice_manager_type;
