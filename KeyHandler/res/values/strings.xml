@@ -19,4 +19,12 @@
     <string name="alert_slider_mode_dnd_alarms_only">Alarms only</string>
     <string name="alert_slider_mute_media_title">Mute media</string>
     <string name="alert_slider_mute_media_summary">Mute media when switching to silent</string>
+
+    <!-- OnePlus Settings -->    
+    <string name="device_title">OnePlus Settings</string>
+    <string name="device_summary">Adjust OnePlus specific device settings</string>
+    
+    <!-- Gestures: Touchscreen gestures --> 
+    <string name="touchscreen_gesture_settings_title">Touchscreen gestures</string> 
+    <string name="touchscreen_gesture_settings_summary">Perform various touchscreen gestures for quick actions</string>
 </resources>
