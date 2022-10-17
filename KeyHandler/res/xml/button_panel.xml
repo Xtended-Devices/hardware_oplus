@@ -41,4 +41,10 @@
             android:defaultValue="2" />
 
     </PreferenceCategory>
+        <Preference
+            android:key="touchscreen_gesture_settings"
+            android:title="@string/touchscreen_gesture_settings_title"
+            android:summary="@string/touchscreen_gesture_settings_summary"
+            android:targetClass="com.android.touch.gestures.TouchscreenGestureSettings" />
+        
 </PreferenceScreen>
