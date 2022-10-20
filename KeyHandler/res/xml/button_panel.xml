@@ -41,10 +41,20 @@
             android:defaultValue="2" />
 
     </PreferenceCategory>
+    <PreferenceCategory
+        android:key="gestures"
+        android:title="@string/screen_gestures_panel_title">
+
         <Preference
-            android:key="touchscreen_gesture_settings"
+            android:key="touchscreen_gesture_category"
             android:title="@string/touchscreen_gesture_settings_title"
             android:summary="@string/touchscreen_gesture_settings_summary"
-            android:targetClass="com.android.touch.gestures.TouchscreenGestureSettings" />
+            android:persistent="false" >
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="org.lineageos.settings.device"
+                    android:targetClass="org.lineageos.settings.device.TouchscreenGestureActivity" />
+        </Preference>
+    </PreferenceCategory>
+
         
 </PreferenceScreen>
