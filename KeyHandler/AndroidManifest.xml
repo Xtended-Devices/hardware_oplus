@@ -19,6 +19,14 @@
           package="org.lineageos.settings.device">
     <uses-permission android:name="android.permission.VIBRATE" />
 
+    <uses-permission android:name="android.permission.INJECT_EVENTS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <protected-broadcast android:name="org.lineageos.settings.device.UPDATE_SETTINGS" />
+
     <application
         android:icon="@mipmap/ic_launcher"
         android:label="@string/device_settings_app_name"
@@ -59,8 +67,29 @@
                 android:resource="@string/device_summary" />
         </activity>
 
-        <service
+        <activity
+            android:name=".TouchscreenGestureActivity"
+            android:label="@string/touchscreen_gesture_settings_title"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="org.lineageos.settings.device.Startup"
+            android:exported="false">
+            <intent-filter android:priority="100" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        
+	<service
             android:name=".KeyHandler"
+            android:permission="KeyHandlerService"
+            android:exported="false" />
+	<service
+            android:name=".TouchKeyHandler"
             android:permission="KeyHandlerService"
             android:exported="false" />
     </application>

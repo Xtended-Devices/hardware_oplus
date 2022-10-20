@@ -1,7 +1,13 @@
 android_app {
     name: "KeyHandler",
 
-    srcs: ["src/**/*.kt"],
+    defaults: [
+        "SettingsLibDefaults",
+    ],
+    srcs: [
+        "src/**/*.java",
+        "src/**/*.kt"
+	],
     resource_dirs: ["res"],
 
     certificate: "platform",
@@ -9,12 +15,22 @@ android_app {
     system_ext_specific: true,
 
     static_libs: [
+        "androidx.core_core",
+        "androidx.preference_preference",
         "org.lineageos.settings.resources",
     ],
 
     optimize: {
         proguard_flags_files: ["proguard.flags"],
     },
+}
+
+prebuilt_etc {
+    name: "privapp_whitelist_devicesettings",
+    sub_dir: "permissions",
+    src: "privapp-permissions-devicesettings.xml",
+    filename_from_src: true,
+    system_ext_specific: true,
 }
 
 sh_binary {
