@@ -32,6 +32,9 @@
     <!-- Whether device supports MSM Touchboost -->
     <bool name="config_deviceSupportsTouchBoost">false</bool>
 
+    <!-- Whether device supports Dolby -->
+    <bool name="config_deviceSupportsDolby">false</bool>
+
     <!-- Whether device supports disabling of fsync -->
     <bool name="config_deviceSupportsFSyncOff">false</bool>
 
