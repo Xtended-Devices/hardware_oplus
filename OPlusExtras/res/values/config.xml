@@ -65,20 +65,6 @@
         <item>73</item>
     </string-array>
 
-    <!-- The default actions of slider when use for refresh rate -->
-    <string-array name="config_defaultSliderActionsForRefresh" translatable="false">
-        <item>68</item>
-        <item>66</item>
-        <item>67</item>
-    </string-array>
-
-    <!-- The default actions of slider when use for colorspace -->
-    <string-array name="config_defaultSliderActionsForColorSpace" translatable="false">
-        <item>78</item>
-        <item>79</item>
-        <item>80</item>
-    </string-array>
-
     <!-- Default action ids for a device's touchscreen gestures
          The array should be sorted in the same order as the
          touchscreen gestures advertised by the device's LineageHW impl. -->

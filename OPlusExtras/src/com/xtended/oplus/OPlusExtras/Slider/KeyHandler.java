@@ -39,10 +39,8 @@ public class KeyHandler implements DeviceKeyHandler {
     private final RotationController mRotationController;
     private final RingerController mRingerController;
     private final NotificationRingerController mNotificationRingerController;
-    private final RefreshController mRefreshController;
     private final ExtraDimController mExtraDimController;
     private final NightLightController mNightLightController;
-    private final ColorSpaceController mColorSpaceController;
 
     private SliderControllerBase mSliderController;
 
@@ -86,20 +84,12 @@ public class KeyHandler implements DeviceKeyHandler {
                     mSliderController = mNotificationRingerController;
                     mSliderController.update(actions);
                     break;
-                case RefreshController.ID:
-                    mSliderController = mRefreshController;
-                    mSliderController.update(actions);
-                    break;
                 case ExtraDimController.ID:
                     mSliderController = mExtraDimController;
                     mSliderController.update(actions);
                     break;
                 case NightLightController.ID:
                     mSliderController = mNightLightController;
-                    mSliderController.update(actions);
-                    break;
-                case ColorSpaceController.ID:
-                    mSliderController = mColorSpaceController;
                     mSliderController.update(actions);
                     break;
             }
@@ -117,10 +107,8 @@ public class KeyHandler implements DeviceKeyHandler {
         mRotationController = new RotationController(mContext);
         mRingerController = new RingerController(mContext);
         mNotificationRingerController = new NotificationRingerController(mContext);
-        mRefreshController = new RefreshController(mContext);
         mExtraDimController = new ExtraDimController(mContext);
         mNightLightController = new NightLightController(mContext);
-        mColorSpaceController = new ColorSpaceController(mContext);
 
         mContext.registerReceiver(mSliderUpdateReceiver,
                 new IntentFilter(SliderConstants.ACTION_UPDATE_SLIDER_SETTINGS));

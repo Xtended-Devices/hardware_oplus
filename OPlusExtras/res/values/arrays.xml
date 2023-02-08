@@ -16,8 +16,6 @@
         <item>@string/notification_slider_for_notification_ringer</item>
         <item>@string/notification_slider_for_extradim</item>
         <item>@string/notification_slider_for_nightlight</item>
-        <item>@string/notification_slider_for_refresh</item>
-        <item>@string/notification_slider_for_colorspace</item>
     </string-array>
 
     <string-array name="notification_slider_usage_entry_values" translatable="false">
@@ -29,8 +27,6 @@
         <item>6</item>
         <item>7</item>
         <item>8</item>
-        <item>9</item>
-        <item>10</item>
     </string-array>
 
     <string-array name="notification_slider_mode_entries" translatable="false">
@@ -137,32 +133,6 @@
         <item>74</item>
         <item>75</item>
         <item>76</item>
-    </string-array>
-
-    <string-array name="notification_slider_refresh_entries" translatable="false">
-        <item>@string/notification_slider_refresh_auto</item>
-        <item>@string/notification_slider_refresh_min</item>
-        <item>@string/notification_slider_refresh_max</item>
-    </string-array>
-
-    <string-array name="notification_slider_refresh_entry_values" translatable="false">
-        <item>66</item>
-        <item>67</item>
-        <item>68</item>
-    </string-array>
-
-    <string-array name="notification_slider_colorspace_entries" translatable="false">
-        <item>@string/notification_slider_colorspace_vivid</item>
-        <item>@string/notification_slider_colorspace_natural</item>
-        <item>@string/notification_slider_colorspace_cinematic</item>
-        <item>@string/notification_slider_colorspace_brilliant</item>
-    </string-array>
-
-    <string-array name="notification_slider_colorspace_entry_values" translatable="false">
-        <item>77</item>
-        <item>78</item>
-        <item>79</item>
-        <item>80</item>
     </string-array>
 
     <!-- FPS Info -->

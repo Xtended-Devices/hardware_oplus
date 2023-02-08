@@ -13,12 +13,10 @@ import android.content.SharedPreferences;
 import android.provider.Settings;
 import androidx.preference.PreferenceManager;
 
-import com.xtended.oplus.OPlusExtras.colorspace.ColorSpaceUtils;
 import com.xtended.oplus.OPlusExtras.doze.DozeUtils;
 import com.xtended.oplus.OPlusExtras.FileUtils;
 import com.xtended.oplus.OPlusExtras.modeswitch.*;
 import com.xtended.oplus.OPlusExtras.preferences.*;
-import com.xtended.oplus.OPlusExtras.refreshrate.RefreshUtils;
 import com.xtended.oplus.OPlusExtras.services.FPSInfoService;
 import com.xtended.oplus.OPlusExtras.touch.TouchscreenGestureSettings;
 
@@ -32,14 +30,12 @@ public class Startup extends BroadcastReceiver {
         AdrenoBoostPreference.restore(context);
         BluePreference.restore(context);
         ContrastPreference.restore(context);
-        ColorSpaceUtils.startService(context);
         DozeUtils.checkDozeService(context);
         GreenPreference.restore(context);
         HuePreference.restore(context);
         MaxBrightnessPreference.restore(context);
         OPlusExtras.restoreSliderStates(context);
         RedPreference.restore(context);
-        RefreshUtils.startService(context);
         SaturationPreference.restore(context);
         TouchscreenGestureSettings.MainSettingsFragment.restoreTouchscreenGestureStates(context);
         ValuePreference.restore(context);
