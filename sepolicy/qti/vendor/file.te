@@ -4,6 +4,7 @@ type vendor_proc_tri_state_key, fs_type, proc_type;
 # Camera
 type public_adsprpcd_file, file_type;
 type vendor_persist_camera_file, file_type;
+type vendor_proc_flash, fs_type, proc_type;
 
 # Charging
 type vendor_proc_wireless, fs_type, proc_type;
@@ -17,6 +18,7 @@ type vendor_proc_engineer, fs_type, proc_type;
 
 # Fingerprint
 type vendor_proc_fingerprint, fs_type, proc_type;
+type vendor_persist_fingerprint_file, file_type;
 
 # Sensors
 type vendor_proc_eng_cali_file, fs_type, proc_type;
